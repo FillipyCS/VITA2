@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".CadastroActivity">
+
+    <ImageView
+        android:id="@+id/icarrow2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/inter24_bold"
+        android:gravity="center"
+        android:letterSpacing="0.01"
+        android:text="Nível de exercício"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botão BAIXO -->
+
+    <TextView
+        android:id="@+id/txtsegundaparte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter24_bold"
+        android:gravity="center"
+        android:letterSpacing="0.01"
+        android:text="físico semanal"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnBaixo"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/green1"
+        android:paddingStart="95dp"
+        android:text="BAIXO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtsegundaparte" />
+
+    <ImageView
+        android:id="@+id/circleBaixo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@id/btnBaixo"
+        app:layout_constraintTop_toTopOf="@id/btnBaixo"
+        app:layout_constraintBottom_toBottomOf="@id/btnBaixo" />
+
+    <ImageView
+        android:id="@+id/iccharge1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/charge1"
+        app:layout_constraintStart_toStartOf="@id/circleBaixo"
+        app:layout_constraintEnd_toEndOf="@id/circleBaixo"
+        app:layout_constraintTop_toTopOf="@id/circleBaixo"
+        app:layout_constraintBottom_toBottomOf="@id/circleBaixo" />
+
+    <ImageView
+        android:id="@+id/arrowBaixo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/smallarrow"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@id/btnBaixo"
+        app:layout_constraintTop_toTopOf="@id/btnBaixo"
+        app:layout_constraintBottom_toBottomOf="@id/btnBaixo" />
+
+    <!-- Botão MÉDIO -->
+    <Button
+        android:id="@+id/btnMedio"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green1"
+        android:paddingStart="95dp"
+        android:text="MÉDIO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBaixo" />
+
+    <ImageView
+        android:id="@+id/circleMedio"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@id/btnMedio"
+        app:layout_constraintTop_toTopOf="@id/btnMedio"
+        app:layout_constraintBottom_toBottomOf="@id/btnMedio" />
+
+    <ImageView
+        android:id="@+id/iccharge2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/charge2"
+        app:layout_constraintStart_toStartOf="@id/circleMedio"
+        app:layout_constraintEnd_toEndOf="@id/circleMedio"
+        app:layout_constraintTop_toTopOf="@id/circleMedio"
+        app:layout_constraintBottom_toBottomOf="@id/circleMedio" />
+
+    <ImageView
+        android:id="@+id/arrowMedio"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/smallarrow"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@id/btnMedio"
+        app:layout_constraintTop_toTopOf="@id/btnMedio"
+        app:layout_constraintBottom_toBottomOf="@id/btnMedio" />
+
+    <!-- Botão ALTO -->
+    <Button
+        android:id="@+id/btnAlto"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green1"
+        android:paddingStart="95dp"
+        android:text="ALTO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMedio" />
+
+    <ImageView
+        android:id="@+id/circleAlto"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@id/btnAlto"
+        app:layout_constraintTop_toTopOf="@id/btnAlto"
+        app:layout_constraintBottom_toBottomOf="@id/btnAlto" />
+
+    <ImageView
+        android:id="@+id/iccharge3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/charge3"
+        app:layout_constraintStart_toStartOf="@id/circleAlto"
+        app:layout_constraintEnd_toEndOf="@id/circleAlto"
+        app:layout_constraintTop_toTopOf="@id/circleAlto"
+        app:layout_constraintBottom_toBottomOf="@id/circleAlto" />
+
+    <ImageView
+        android:id="@+id/arrowAlto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/smallarrow"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@id/btnAlto"
+        app:layout_constraintTop_toTopOf="@id/btnAlto"
+        app:layout_constraintBottom_toBottomOf="@id/btnAlto" />
+
+    <!-- Botão MUITO ALTO -->
+    <Button
+        android:id="@+id/btnMuitoAlto"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green1"
+        android:paddingStart="95dp"
+        android:text="MUITO ALTO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAlto" />
+
+    <ImageView
+        android:id="@+id/circleMuitoAlto"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@id/btnMuitoAlto"
+        app:layout_constraintTop_toTopOf="@id/btnMuitoAlto"
+        app:layout_constraintBottom_toBottomOf="@id/btnMuitoAlto" />
+
+    <ImageView
+        android:id="@+id/iccharge4"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/charge4"
+        app:layout_constraintStart_toStartOf="@id/circleMuitoAlto"
+        app:layout_constraintEnd_toEndOf="@id/circleMuitoAlto"
+        app:layout_constraintTop_toTopOf="@id/circleMuitoAlto"
+        app:layout_constraintBottom_toBottomOf="@id/circleMuitoAlto" />
+
+    <ImageView
+        android:id="@+id/arrowMuitoAlto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/smallarrow"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@id/btnMuitoAlto"
+        app:layout_constraintTop_toTopOf="@id/btnMuitoAlto"
+        app:layout_constraintBottom_toBottomOf="@id/btnMuitoAlto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
